@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="./assets/output/output.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="py-1 w-full">
+        <section class="container mx-auto sm:px-16 px-2">
+            <section class="grid grid-cols-3 items-center">
+                <div class="col-span-1">
+                    <a href="#"><img class="w-4/12" src="./assets/img/logo.png" alt=""></a>
+                </div>
+                <div class="col-span-1">
+                    <ul class="flex flex-row justify-between font-bold">
+                        <li><a class="hover:text-secondcolor" href="index.html">Home</a></li>
+                        <li><a class="hover:text-secondcolor" href="germany.html">Germany</a></li>
+                        <li><a class="hover:text-secondcolor" href="france.html">France</a></li>
+                        <li><a class="hover:text-secondcolor" href="canada.html">Canada</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1"></div>
+            </section>
+        </section>
+    </header>
+
+    <main class="w-full">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+            uk-slideshow="animation: fade; autoplay:true;">
+
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="./assets/img/canada.jpg" alt="" uk-cover>
+                    <div
+                        class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">Toronto</h3>
+                        <p class="uk-margin-remove">
+                            Toronto is the capital city of the Canadian province of Ontario - CANADA
+                        </p>
+                        <a href="canada.html" class="uk-button uk-button-primary mt-4">see more</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/img/france.jpg" alt="" uk-cover>
+                    <div
+                        class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">Paris</h3>
+                        <p class="uk-margin-remove">
+                            Paris is the capital and most populous city of France - FRANCE
+                        </p>
+                        <a href="france.html" class="uk-button uk-button-primary mt-4">see more</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./assets/img/germany.jpg" alt="" uk-cover>
+                    <div
+                        class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">Berlin</h3>
+                        <p class="uk-margin-remove">
+                            Berlin is the capital and largest city of Germany by both area and population. - Germany</p>
+                        <a href="germany.html" src="germany.html" class="uk-button uk-button-primary mt-4">see more</a>
+                    </div>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                uk-slideshow-item="next"></a>
+        </div>
+
+        <section class="w-full news py-5">
+            <section class="container mx-auto sm:px-16 px-2">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="col-span-3">
+                        <h1 class="uk-heading-line"><span class="font-bold">Select one of these countries</span></h1>
+                    </div>
+                    <div class="col-span-1">
+                        <a href="canada.html">
+                            <div class="relative countryflag">
+                                <img src="./assets/img/ca.svg" alt="">
+                                <div class="mask absolute w-full h-full top-0"></div>
+                                <h2 class="flagtext w-full text-center absolute text-5xl font-bold text-white">CANADA
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-span-1">
+                        <a href="france.html">
+                            <div class="relative countryflag">
+                                <img src="./assets/img/fr.svg" alt="">
+                                <div class="mask absolute w-full h-full top-0"></div>
+                                <h2 class="flagtext w-full text-center absolute text-5xl font-bold text-white">France
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-span-1">
+                        <a href="germany.html">
+                            <div class="relative countryflag">
+                                <img src="./assets/img/de.svg" alt="">
+                                <div class="mask absolute w-full h-full top-0"></div>
+                                <h2 class="flagtext w-full text-center absolute text-5xl font-bold text-white">Germany
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="w-full news py-5">
+            <section class="container mx-auto sm:px-16 px-2">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="col-span-3">
+                        <h1 class="uk-heading-line"><span class="font-bold">News</span></h1>
+                    </div>
+                    <div class="col-span-1">
+                        <div class="newsbox border-2 p-2">
+                            <h1 class="border-b-2 pb-4 mb-2">Canada News: <img class="w-6 float-left mr-2"
+                                    src="./assets/img/ca.svg" alt=""></h1>
+                            <ul class="canadanews">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div class="newsbox border-2 p-2">
+                            <h1 class="border-b-2 pb-4 mb-2">France News: <img class="w-6 float-left mr-2"
+                                    src="./assets/img/fr.svg" alt=""></h1>
+                            <ul class="francenews">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-span-1">
+                        <div class="newsbox border-2 p-2">
+                            <h1 class="border-b-2 pb-4 mb-2">Germany News: <img class="w-6 float-left mr-2"
+                                    src="./assets/img/de.svg" alt=""></h1>
+                            <ul class="germanynews">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="w-full bg-slate-800">
+        <section class="container mx-auto sm:px-16 px-2">
+            <section class="grid grid-cols-1">
+                <div class="col-span-1">
+                    <ul class="py-6 flex flex-row justify-center gap-3">
+                        <li><a class="text-white" href="#"><span uk-icon="instagram"></span></a></li>
+                        <li><a class="text-white" href="#"><span uk-icon="whatsapp"></span></a></li>
+                        <li><a class="text-white" href="#"><span uk-icon="youtube"></span></a></li>
+                        <li><a class="text-white" href="#"><span uk-icon="github"></span></a></li>
+                        <li><a class="text-white" href="#"><span uk-icon="facebook"></span></a></li>
+                    </ul>
+                    <p class="pb-10 text-white w-full text-center">Copyright ©2023 Ehsan Farahmand ®</p>
+                </div>
+            </section>
+        </section>
+    </footer>
+
+    <script src="./assets/uikit/js/uikit.min.js"></script>
+    <script src="./assets/uikit/js/uikit-icons.min.js"></script>
+    <script src="./assets/js/news.js"></script>
+</body>
+
+</html>
